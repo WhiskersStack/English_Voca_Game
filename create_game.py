@@ -3,18 +3,14 @@ Vocabulary training game
 """
 
 import json
-import os
 from print_words import print_words
 from play import play_the_game
 
 
 def create_game():
     """
-    Load words from the vocabulary file, and initialize the counter for each word.
+    Load words from the vocabulary file, and initialize the game.
     """
-    if not os.path.exists("vocabulary.json"):
-        print("\n> Vocabulary file does not exist.\n")
-        return {}
 
     with open("vocabulary.json", "r", encoding="utf-8") as file:
         words_list = json.load(file)
@@ -24,7 +20,8 @@ def create_game():
         for word in words_list[u]:
             word['counter'] = 0
 
-    play_unit = "unit_" + input("\n> Enter the unit you want to play (1/2/3...) : ")
+    play_unit = "unit_" + \
+        input("\n> Enter the unit you want to play (1/2/3...) : ")
     print_words(play_unit)
     is_range = input("\n> Do you want to loop all the words? (y/n) : ").lower()
 
