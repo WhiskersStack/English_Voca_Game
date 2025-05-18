@@ -25,9 +25,9 @@ def add_word(word, meaning, unit):
         user_unit = "unit_" + str(unit)
         flag = 0
 
-        for unit in words_list:
-            if unit == user_unit:
-                words_list[unit].append({"word": word, "meaning": meaning})
+        for u in words_list:
+            if u == user_unit:
+                words_list[u].append({"word": word, "meaning": meaning})
                 flag = 1
 
         if flag == 0:
