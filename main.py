@@ -1,14 +1,15 @@
 """This is a simple English vocabulary """
 import time
 from print_options import print_game_options
+from loading_feature import loading
 
 
 def main():
     """
     Main function to start the English vocabulary game.
     """
-    print("\n\n\n Welcome to the English Vocabulary Game!\n\n\n")
-
+    print("\nWelcome to the English Vocabulary Game!")
+    loading()
     while True:
         print_game_options()
         choice = input("> Enter your choice (1/2/3/4/5) : ")
