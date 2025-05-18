@@ -14,6 +14,7 @@ def play_the_game(word_list, word1, word2):
     start = 0
     end = 0
     if word1:
+        last_word = 'temp'
         for word in word_list:
             if word1 == word['word'] or word2 == word['word']:
                 flag += 1
@@ -24,7 +25,6 @@ def play_the_game(word_list, word1, word2):
 
         if flag == 2:  # If both words are found
             word_range = end - start + 1
-            last_word = 'temp'
             while is_playing:  # Loop until the user decides to stop or all words are shown 7 times
                 # Randomly select a word from the range
                 random_num = random.randint(start, end + 1)
@@ -50,5 +50,30 @@ def play_the_game(word_list, word1, word2):
         else:  # If the words are not found in the list
             print("\n> Words not found in the list.\n")
             return False
+    else:  # If no specific range is provided, show all words
+        last_word = 'temp'
+        word_range = len(word_list)
+        while is_playing:
+            # Randomly select a word from the list
+            random_num = random.randint(0, len(word_list) - 1)
+            # Avoid showing the same word consecutively
+            if last_word != word_list[random_num]['word']:
+                # Check if the word has been shown 7 times
+                if word_list[random_num]['counter'] != 7:
+                    # Show the word
+                    print(f"\n> Word: {word_list[random_num]['word']}")
+                    # Update last_word
+                    last_word = word_list[random_num]['word']
+                    time.sleep(3)
+                    # Show the meaning
+                    print(f"> Meaning: {word_list[random_num]['meaning']}")
+                    time.sleep(1.5)
+                    # Increment the word counter
+                    word_list[random_num]['counter'] += 1
+                else:  # If the word has been shown 7 times, decrement the word_range flag
+                    word_range -= 1
+                if word_range == 0:
+                    print("\n> All words have been shown 7 times.\n")
+                    is_playing = False
 
     print("\n> Exiting the game...\n")

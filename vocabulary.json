@@ -104,5 +104,15 @@
             "word": "rain",
             "meaning": "גשם"
         }
+    ],
+    "unit_4": [
+        {
+            "word": "dog",
+            "meaning": "כלב"
+        },
+        {
+            "word": "cat",
+            "meaning": "חתול"
+        }
     ]
 }

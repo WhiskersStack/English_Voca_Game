@@ -24,10 +24,10 @@ def print_words(user_unit=None):
             for word in words_list[user_unit]:
                 print(f"  - {word['word']}")
         else:
-            print(f"\n> Unit {user_unit} does not exist.\n")
+            print(f"\n> {user_unit} does not exist.\n")
             return False
         
-        return
+        return True
         
     for unit, words in words_list.items():
         print(f"\n{unit}:")
