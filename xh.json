@@ -1,0 +1,133 @@
+{
+    "unit_1": [
+        {
+            "word": "apple",
+            "meaning": "תפוח",
+            "counter": 0
+        },
+        {
+            "word": "banana",
+            "meaning": "בננה",
+            "counter": 0
+        },
+        {
+            "word": "grape",
+            "meaning": "ענב",
+            "counter": 0
+        },
+        {
+            "word": "orange",
+            "meaning": "תפוז",
+            "counter": 0
+        },
+        {
+            "word": "pear",
+            "meaning": "אגס",
+            "counter": 0
+        },
+        {
+            "word": "fruit",
+            "meaning": "פרי",
+            "counter": 0
+        },
+        {
+            "word": "vegetable",
+            "meaning": "ירק",
+            "counter": 0
+        },
+        {
+            "word": "carrot",
+            "meaning": "גזר",
+            "counter": 0
+        },
+        {
+            "word": "potato",
+            "meaning": "תפוח אדמה",
+            "counter": 0
+        },
+        {
+            "word": "tomato",
+            "meaning": "עגבנייה",
+            "counter": 0
+        },
+        {
+            "word": "cucumber",
+            "meaning": "מלפפון",
+            "counter": 0
+        },
+        {
+            "word": "onion",
+            "meaning": "בצל",
+            "counter": 0
+        },
+        {
+            "word": "lettuce",
+            "meaning": "חסה",
+            "counter": 0
+        },
+        {
+            "word": "pepper",
+            "meaning": "פלפל",
+            "counter": 0
+        },
+        {
+            "word": "broccoli",
+            "meaning": "ברוקולי",
+            "counter": 0
+        }
+    ],
+    "unit_2": [
+        {
+            "word": "book",
+            "meaning": "ספר",
+            "counter": 0
+        },
+        {
+            "word": "pen",
+            "meaning": "עט",
+            "counter": 0
+        },
+        {
+            "word": "pencil",
+            "meaning": "עיפרון",
+            "counter": 0
+        },
+        {
+            "word": "school",
+            "meaning": "בית ספר",
+            "counter": 0
+        },
+        {
+            "word": "teacher",
+            "meaning": "מורה",
+            "counter": 0
+        }
+    ],
+    "unit_3": [
+        {
+            "word": "sun",
+            "meaning": "שמש",
+            "counter": 0
+        },
+        {
+            "word": "moon",
+            "meaning": "ירח",
+            "counter": 0
+        },
+        {
+            "word": "star",
+            "meaning": "כוכב",
+            "counter": 0
+        },
+        {
+            "word": "cloud",
+            "meaning": "ענן",
+            "counter": 0
+        },
+        {
+            "word": "rain",
+            "meaning": "גשם",
+            "counter": 0
+        }
+    ]
+}

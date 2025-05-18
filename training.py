@@ -25,7 +25,7 @@ def load_words(unit, word1, word2):
         for word in words_list[u]:
             word['counter'] = 0
 
-    with open("x.json", "w", encoding="utf-8") as file:
+    with open("xh.json", "w", encoding="utf-8") as file:
         json.dump(words_list, file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
