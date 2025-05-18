@@ -16,8 +16,6 @@ def create_game():
         print("\n> Vocabulary file does not exist.\n")
         return {}
 
-    print_words()
-
     with open("vocabulary.json", "r", encoding="utf-8") as file:
         words_list = json.load(file)
 
@@ -26,12 +24,13 @@ def create_game():
         for word in words_list[u]:
             word['counter'] = 0
 
-    play_unit = input("\n> Enter the unit you want to play (1/2/3...) : ")
+    play_unit = "unit_" + input("\n> Enter the unit you want to play (1/2/3...) : ")
+    print_words(play_unit)
     is_range = input("\n> Do you want to loop all the words? (y/n) : ").lower()
 
-    if is_range == "y":
-        word1 = int(input("\n> Enter the first word to start from : "))
-        word2 = int(input("\n> Enter the last word to end : "))
+    if is_range == "n":
+        word1 = input("\n> Enter the first word to start from : ")
+        word2 = input("\n> Enter the last word to end : ")
         play_the_game(words_list[play_unit], word1, word2)
     else:
         play_the_game(words_list[play_unit], False, False)
