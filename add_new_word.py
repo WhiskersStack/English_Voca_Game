@@ -9,17 +9,17 @@ import os
 
 def add_word(word, meaning, unit):
     """
-    Check if the file exists
+        Check if the file exists
     """
     if not os.path.exists("vocabulary.json"):
         # If it doesn't exist, create an empty list
         words_list = {"unit_1": [{"word": word, "meaning": meaning}]}
 
         with open("vocabulary.json", "w", encoding="utf-8") as file:
-            json.dump(words_list, file, ensure_ascii=False, indent=4)
+            json.dump(words_list, file, indent=4)
     else:
         # If it exists, read the existing words
-        with open("words.json", "r", encoding="utf-8") as file:
+        with open("vocabulary.json", "r", encoding="utf-8") as file:
             words_list = json.load(file)
 
         user_unit = "unit_" + str(unit)
@@ -32,6 +32,12 @@ def add_word(word, meaning, unit):
 
         if flag == 0:
             words_list[user_unit] = [{"word": word, "meaning": meaning}]
+
+    # Write the updated words back to the file
+    with open("vocabulary.json", "w", encoding="utf-8") as file:
+        json.dump(words_list, file, indent=4)
+
+    print("\n> Word added successfully!\n")
 
 
 add_word("example", "a representative form or pattern", 1)
