@@ -2,11 +2,12 @@
 Start the vocabulary training game
 """
 import random
+import time
 
 
 def play_the_game(word_list, word1, word2):
     """
-    Play the vocabulary training game
+    Play the vocabulary training game with the given word list and range.
     """
     is_playing = True
     flag = 0
@@ -23,17 +24,30 @@ def play_the_game(word_list, word1, word2):
 
         if flag == 2:  # If both words are found
             word_range = end - start + 1
+            last_word = 'temp'
             while is_playing:  # Loop until the user decides to stop or all words are shown 7 times
+                # Randomly select a word from the range
                 random_num = random.randint(start, end + 1)
-                if word_list[random_num]['counter'] != 7:
-                    print(f"\n> Word: {word_list[random_num]['word']}")
-                    word_list[random_num]['counter'] += 1
-                else:
-                    word_range -= 1
-                if word_range == 0:
-                    print("\n> All words have been shown 7 times.\n")
-                    is_playing = False
-        else:
+                # Avoid showing the same word consecutively
+                if last_word != word_list[random_num]['word']:
+                    # Check if the word has been shown 7 times
+                    if word_list[random_num]['counter'] != 7:
+                        # Show the word
+                        print(f"\n> Word: {word_list[random_num]['word']}")
+                        # Update last_word
+                        last_word = word_list[random_num]['word']
+                        time.sleep(3)  # Wait for 3 seconds
+                        # Show the meaning
+                        print(f"> Meaning: {word_list[random_num]['meaning']}")
+                        time.sleep(1.5)  # Wait for 1.5 seconds
+                        # Increment the word counter
+                        word_list[random_num]['counter'] += 1
+                    else:  # If the word has been shown 7 times, decrement the word_range flag
+                        word_range -= 1
+                    if word_range == 0:  # If all words have been shown 7 times, exit the loop
+                        print("\n> All words have been shown 7 times.\n")
+                        is_playing = False  # Exit the loop
+        else:  # If the words are not found in the list
             print("\n> Words not found in the list.\n")
             return False
 
