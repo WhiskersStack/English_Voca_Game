@@ -1,0 +1,37 @@
+"""
+Add a new word to the words.json file
+This script checks if the file exists, and if it does, it reads the existing words.
+"""
+
+import json
+import os
+
+
+def add_word(word, meaning, unit):
+    """
+    Check if the file exists
+    """
+    if not os.path.exists("vocabulary.json"):
+        # If it doesn't exist, create an empty list
+        words_list = {"unit_1": [{"word": word, "meaning": meaning}]}
+
+        with open("vocabulary.json", "w", encoding="utf-8") as file:
+            json.dump(words_list, file, ensure_ascii=False, indent=4)
+    else:
+        # If it exists, read the existing words
+        with open("words.json", "r", encoding="utf-8") as file:
+            words_list = json.load(file)
+
+        user_unit = "unit_" + str(unit)
+        flag = 0
+
+        for unit in words_list:
+            if unit == user_unit:
+                words_list[unit].append({"word": word, "meaning": meaning})
+                flag = 1
+
+        if flag == 0:
+            words_list[user_unit] = [{"word": word, "meaning": meaning}]
+
+
+add_word("example", "a representative form or pattern", 1)
