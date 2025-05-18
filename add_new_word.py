@@ -27,7 +27,7 @@ def add_word(word, meaning, unit):
 
         for u in words_list:
             if u == user_unit:
-                words_list[u].append({"word": word, "meaning": meaning})
+                words_list[u].append({"word": word.lower(), "meaning": meaning})
                 flag = 1
 
         if flag == 0:
@@ -40,4 +40,5 @@ def add_word(word, meaning, unit):
     print("\n> Word added successfully!\n")
 
 
-add_word("example", "a representative form or pattern", 1)
+if __name__ == "__main__":
+    add_word("DDD", "a representative form or pattern", 1)
