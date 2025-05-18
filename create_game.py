@@ -4,7 +4,7 @@ Vocabulary training game
 
 import json
 from print_words import print_words
-from play import play_the_game
+from play_training import play_the_game
 
 
 def create_game():
