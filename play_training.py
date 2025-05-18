@@ -32,12 +32,10 @@ def play_the_game(word_list, word1, word2):
                 if last_word != word_list[random_num]['word']:
                     # Check if the word has been shown 7 times
                     if word_list[random_num]['counter'] != 7:
-                        # Show the word
                         print(f"\n> Word: {word_list[random_num]['word']}")
                         # Update last_word
                         last_word = word_list[random_num]['word']
                         time.sleep(3)  # Wait for 3 seconds
-                        # Show the meaning
                         print(f"> Meaning: {word_list[random_num]['meaning']}")
                         time.sleep(1.5)  # Wait for 1.5 seconds
                         # Increment the word counter
@@ -60,12 +58,10 @@ def play_the_game(word_list, word1, word2):
             if last_word != word_list[random_num]['word']:
                 # Check if the word has been shown 7 times
                 if word_list[random_num]['counter'] != 7:
-                    # Show the word
                     print(f"\n> Word: {word_list[random_num]['word']}")
                     # Update last_word
                     last_word = word_list[random_num]['word']
                     time.sleep(3)
-                    # Show the meaning
                     print(f"> Meaning: {word_list[random_num]['meaning']}")
                     time.sleep(1.5)
                     # Increment the word counter
