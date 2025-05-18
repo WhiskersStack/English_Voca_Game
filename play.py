@@ -1,14 +1,18 @@
-"""
-Printing the words for tha game
-"""
-
 import json
 import os
 import random
 
 
-def play_the_game(unit, word_list, word1, word2):
+def play_the_game(word_list, word1, word2):
     """
     Play the vocabulary training game
     """
-    print("\n> Starting the game...\n")
+
+    if not word1:
+        start = word_list.index(word1)
+        end = word_list.index(word2)
+        
+        for 
+            random_num = random.randint(start, end)
+        
+    

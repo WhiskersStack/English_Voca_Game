@@ -32,9 +32,9 @@ def create_game():
     if is_range == "y":
         word1 = int(input("\n> Enter the first word to start from : "))
         word2 = int(input("\n> Enter the last word to end : "))
-        play_the_game(words_list, play_unit, word1, word2)
+        play_the_game(words_list[play_unit], word1, word2)
     else:
-        play_the_game(words_list, play_unit, False, False)
+        play_the_game(words_list[play_unit], False, False)
 
 
 if __name__ == "__main__":

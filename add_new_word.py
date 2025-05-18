@@ -27,10 +27,18 @@ def add_word(word, meaning, unit):
 
         for u in words_list:
             if u == user_unit:
+                # Check if the word already exists in the unit
+                for word_dict in words_list[u]:
+                    if word_dict["word"].lower() == word.lower():
+                        print("\n> Word already exists in the unit.\n")
+                        flag = 1
+                        break
                 words_list[u].append({"word": word.lower(), "meaning": meaning})
                 flag = 1
 
         if flag == 0:
+            print("\n> Unit does not exist. Creating a new unit...\n")
+            # Create a new unit and add the word
             words_list[user_unit] = [{"word": word, "meaning": meaning}]
 
     # Write the updated words back to the file
