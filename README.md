@@ -68,12 +68,3 @@ python main.py
   ]
 }
 ```
-
----
-
-## 🔧 Developer Notes
-
-- Add new word: `python add_new_word.py`
-- Training Mode uses reversed meanings as a challenge.
-- Training ends after each word is shown 7 times.
-- `.gitignore` excludes `__pycache__/` files.
