@@ -2,117 +2,67 @@
     "unit_1": [
         {
             "word": "apple",
-            "meaning": "\u05ea\u05e4\u05d5\u05d7"
+            "meaning": "תפוח"
         },
         {
             "word": "banana",
-            "meaning": "\u05d1\u05e0\u05e0\u05d4"
+            "meaning": "בננה"
         },
         {
             "word": "grape",
-            "meaning": "\u05e2\u05e0\u05d1"
+            "meaning": "ענב"
         },
         {
             "word": "orange",
-            "meaning": "\u05ea\u05e4\u05d5\u05d6"
+            "meaning": "תפוז"
         },
         {
             "word": "pear",
-            "meaning": "\u05d0\u05d2\u05e1"
-        },
-        {
-            "word": "fruit",
-            "meaning": "\u05e4\u05e8\u05d9"
-        },
-        {
-            "word": "vegetable",
-            "meaning": "\u05d9\u05e8\u05e7"
-        },
-        {
-            "word": "carrot",
-            "meaning": "\u05d2\u05d6\u05e8"
-        },
-        {
-            "word": "potato",
-            "meaning": "\u05ea\u05e4\u05d5\u05d7 \u05d0\u05d3\u05de\u05d4"
-        },
-        {
-            "word": "tomato",
-            "meaning": "\u05e2\u05d2\u05d1\u05e0\u05d9\u05d9\u05d4"
-        },
-        {
-            "word": "cucumber",
-            "meaning": "\u05de\u05dc\u05e4\u05e4\u05d5\u05df"
-        },
-        {
-            "word": "onion",
-            "meaning": "\u05d1\u05e6\u05dc"
-        },
-        {
-            "word": "lettuce",
-            "meaning": "\u05d7\u05e1\u05d4"
-        },
-        {
-            "word": "pepper",
-            "meaning": "\u05e4\u05dc\u05e4\u05dc"
-        },
-        {
-            "word": "broccoli",
-            "meaning": "\u05d1\u05e8\u05d5\u05e7\u05d5\u05dc\u05d9"
+            "meaning": "אגס"
         }
     ],
     "unit_2": [
         {
             "word": "book",
-            "meaning": "\u05e1\u05e4\u05e8"
+            "meaning": "ספר"
         },
         {
             "word": "pen",
-            "meaning": "\u05e2\u05d8"
+            "meaning": "עט"
         },
         {
             "word": "pencil",
-            "meaning": "\u05e2\u05d9\u05e4\u05e8\u05d5\u05df"
+            "meaning": "עיפרון"
         },
         {
             "word": "school",
-            "meaning": "\u05d1\u05d9\u05ea \u05e1\u05e4\u05e8"
+            "meaning": "בית ספר"
         },
         {
             "word": "teacher",
-            "meaning": "\u05de\u05d5\u05e8\u05d4"
+            "meaning": "מורה"
         }
     ],
     "unit_3": [
         {
             "word": "sun",
-            "meaning": "\u05e9\u05de\u05e9"
+            "meaning": "שמש"
         },
         {
             "word": "moon",
-            "meaning": "\u05d9\u05e8\u05d7"
+            "meaning": "ירח"
         },
         {
             "word": "star",
-            "meaning": "\u05db\u05d5\u05db\u05d1"
+            "meaning": "כוכב"
         },
         {
             "word": "cloud",
-            "meaning": "\u05e2\u05e0\u05df"
+            "meaning": "ענן"
         },
         {
             "word": "rain",
-            "meaning": "\u05d2\u05e9\u05dd"
-        }
-    ],
-    "unit_4": [
-        {
-            "word": "dog",
-            "meaning": "\u05db\u05dc\u05d1"
-        },
-        {
-            "word": "cat",
-            "meaning": "\u05d7\u05ea\u05d5\u05dc"
+            "meaning": "גשם"
         }
     ]
 }
