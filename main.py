@@ -15,7 +15,7 @@ def main():
     print("\nMain Menu:")
     print_game_options()
     while is_playing:
-        choice = input("> Enter your choice (1/2/3...), 3 for menu : ")
+        choice = input("\n> Enter your choice (1/2/3...), 3 for menu : ")
         if choice == "1":
             #print("\n> Starting game...\n")
             time.sleep(1)
