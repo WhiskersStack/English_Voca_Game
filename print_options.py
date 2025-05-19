@@ -2,13 +2,12 @@
 
 
 def print_game_options():
-    """
-    Print the game options.
-    """
+    """ Print the game options. """
     print("\n1. Start Game")
     print("2. Edit Mode")
     print("3. Show Options")
-    print("4. Exit\n")
+    print("4. Show All Words")
+    print("5. Exit\n")
 
 
 if __name__ == "__main__":

@@ -24,7 +24,7 @@ def play_the_game(word_list, word1, word2):
             word_range = end - start + 1
             while is_playing:  # Loop until the user decides to stop or all words are shown 7 times
                 # Randomly select a word from the range
-                random_num = random.randint(start, end + 1)
+                random_num = random.randint(start, end)
                 # Avoid showing the same word consecutively
                 if last_word != word_list[random_num]['word']:
                     # Check if the word has been shown 7 times
