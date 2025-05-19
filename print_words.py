@@ -1,6 +1,4 @@
-"""
-Printing all the words
-"""
+""" Printing all the words. """
 
 import json
 import os

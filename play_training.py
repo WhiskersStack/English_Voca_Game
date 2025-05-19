@@ -1,14 +1,11 @@
-"""
-Start the vocabulary training game
-"""
+""" Start the vocabulary training game. """
 import random
 import time
+import json
 
 
 def play_the_game(word_list, word1, word2):
-    """
-    Play the vocabulary training game with the given word list and range.
-    """
+    """ Play the vocabulary training game with the given word list and range. """
     is_playing = True
     flag = 0
     start = 0
@@ -73,3 +70,10 @@ def play_the_game(word_list, word1, word2):
                     is_playing = False
 
     print("\n> Exiting the game...\n")
+
+
+if __name__ == "__main__":
+    # Example usage
+    with open("vocabulary.json", "r", encoding="utf-8") as file:
+        word_list1 = json.load(file)
+    play_the_game(word_list1, 'apple', 'cherry')

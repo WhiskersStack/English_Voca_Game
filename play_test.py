@@ -3,8 +3,6 @@ import time
 import json
 from print_words import print_words
 from loading_feature import loading
-with open("vocabulary.json", "r", encoding="utf-8") as file:
-    words_list = json.load(file)
 
 
 def start_test(word_list):
@@ -49,4 +47,8 @@ def start_test(word_list):
         print("\n> Aborting the test...\n")
 
 
-start_test(words_list)
+if __name__ == "__main__":
+    # Example usage
+    with open("vocabulary.json", "r", encoding="utf-8") as file:
+        words_list = json.load(file)
+    start_test(words_list)

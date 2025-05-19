@@ -9,3 +9,7 @@ def print_game_options():
     print("2. Edit Mode")
     print("3. Show Options")
     print("4. Exit\n")
+
+
+if __name__ == "__main__":
+    print_game_options()

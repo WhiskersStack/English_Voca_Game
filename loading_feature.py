@@ -11,3 +11,8 @@ def loading():
         time.sleep(1)
         print(".", end="", flush=True)
     print("\n")
+
+
+if __name__ == "__main__":
+    loading()
+    print("\n> Loading complete!\n")

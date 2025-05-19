@@ -28,6 +28,7 @@ def main():
         elif choice == "3":
             print("\n> Showing options...\n")
             time.sleep(1)
+            print_game_options()
         elif choice == "4":
             print("\n> Exiting the game...\n")
             time.sleep(1)

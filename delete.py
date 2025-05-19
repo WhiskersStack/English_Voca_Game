@@ -32,4 +32,4 @@ def delete_word(word, unit):
 
 if __name__ == "__main__":
     # Example usage
-    delete_word("DDD", 1)
+    delete_word("demo", 1)

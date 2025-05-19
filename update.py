@@ -1,6 +1,4 @@
-"""
-Updating the vocabulary file
-"""
+""" Updating the vocabulary file. """
 
 import json
 import os
@@ -34,4 +32,4 @@ def update_word(word, new_meaning, unit):
 
 if __name__ == "__main__":
     # Example usage
-    update_word("DDD", "a new dd", 1)
+    update_word("demo", "demo", 1)
