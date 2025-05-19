@@ -3,6 +3,7 @@ import time
 from print_options import print_game_options
 from loading_feature import loading
 from create_game import create_game
+from edit_controller import load_edit_controller
 
 def main():
     """
@@ -17,13 +18,13 @@ def main():
         print_game_options()
         choice = input("> Enter your choice (1/2/3/4) : ")
         if choice == "1":
-            print("\n> Starting game...\n")
+            #print("\n> Starting game...\n")
             time.sleep(1)
             create_game()
         elif choice == "2":
             print("\n> Starting edit mode...\n")
             time.sleep(1)
-            # Call the edit mode function here
+            load_edit_controller()
         elif choice == "3":
             print("\n> Showing options...\n")
             time.sleep(1)

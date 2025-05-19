@@ -1,5 +1,8 @@
-_pycache_
+_pycache_/
 __pycache__/play.cpython-311.pyc
 __pycache__/print_words.cpython-311.pyc
 __pycache__/play_training.cpython-311.pyc
 __pycache__/print_options.cpython-311.pyc
+__pycache__/add_new_word.cpython-311.pyc
+__pycache__/delete.cpython-311.pyc
+__pycache__/update.cpython-311.pyc

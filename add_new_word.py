@@ -1,16 +1,11 @@
-"""
-Add a new word to the words.json file
-This script checks if the file exists, and if it does, it reads the existing words.
-"""
+""" A Module to add a new word to the vocabulary JSON file. """
 
 import json
 import os
 
 
 def add_word(word, meaning, unit):
-    """
-        Check if the file exists
-    """
+    """ Check if the file exists. """
     if not os.path.exists("vocabulary.json"):
         # If it doesn't exist, create an empty list
         words_list = {"unit_1": [{"word": word, "meaning": meaning}]}
@@ -32,7 +27,7 @@ def add_word(word, meaning, unit):
                     if word_dict["word"].lower() == word.lower():
                         print("\n> Word already exists in the unit.\n")
                         flag = 1
-                        break
+                        return None
                 words_list[u].append({"word": word.lower(), "meaning": meaning})
                 flag = 1
 
