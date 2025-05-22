@@ -5,6 +5,9 @@ from loading_feature import loading
 from create_game import create_game
 from edit_controller import load_edit_controller
 from print_words import print_words
+from download_from_s3 import download_file_from_s3
+from create_upload_s3 import create_s3_bucket, upload_file_to_s3
+
 
 def main():
     """ Main function to start the English vocabulary game. """
@@ -17,7 +20,7 @@ def main():
     while is_playing:
         choice = input("\n> Enter your choice (1/2/3...), 3 for menu : ")
         if choice == "1":
-            #print("\n> Starting game...\n")
+            # print("\n> Starting game...\n")
             time.sleep(1)
             create_game()
         elif choice == "2":
@@ -33,6 +36,15 @@ def main():
             time.sleep(1)
             print_words()
         elif choice == "5":
+            print("\n> Creating S3 bucket and uploading file...\n")
+            time.sleep(1)
+            create_s3_bucket()
+            upload_file_to_s3()
+        elif choice == "6":
+            print("\n> Downloading file from S3...\n")
+            time.sleep(1)
+            download_file_from_s3()
+        elif choice == "7":
             print("\n> Exiting the game...\n")
             time.sleep(1)
             is_playing = False
