@@ -20,7 +20,7 @@ def create_s3_bucket():
         print(
             f"Bucket '{BUCKET_NAME}' created successfully")
     except Exception as e:
-        print(f"❌ Failed to create bucket: {e}")
+        print(f"Failed to create bucket: {e}")
 
 
 def upload_file_to_s3():
@@ -33,7 +33,7 @@ def upload_file_to_s3():
         s3.upload_file('vocabulary.json', BUCKET_NAME, 'vocabulary_json')
         print("File uploaded successfully")
     except Exception as e:
-        print(f"❌ Failed to upload file: {e}")
+        print(f"Failed to upload file: {e}")
 
 if __name__ == "__main__":
     create_s3_bucket()

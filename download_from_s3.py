@@ -17,7 +17,7 @@ def download_file_from_s3():
         s3.download_file(BUCKET_NAME, S3_KEY, DOWNLOAD_PATH)
         print("File downloaded successfully")
     except Exception as e:
-        print(f"❌ Download failed: {e}")
+        print(f"Download failed: {e}")
 
 
 if __name__ == "__main__":
